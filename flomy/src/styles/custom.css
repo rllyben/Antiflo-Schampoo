@@ -1,0 +1,29 @@
+:root {
+    --main-text-color: #F4981A;
+    --main-hover-color: #FFC678;
+}
+body {
+    background-color: #2D2D2D;
+    color: var(--main-text-color);
+    overflow-x: hidden;
+}
+a {
+  color: var(--main-text-color);
+}
+h1 {
+  width: fit-content;
+  text-align: center;
+  padding: 0 3rem;
+  margin-top: -5rem;
+  background-color: #2D2D2D;
+}
+p {
+  text-align: center;
+}
+
+.navbar {
+  --bs-navbar-brand-color: var(--main-text-color);
+}
+.navbar-brand:hover, .navbar-brand:focus {
+  --bs-navbar-brand-hover-color: var(--main-hover-color);
+}

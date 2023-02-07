@@ -1,11 +1,12 @@
 <template>
     <div class="main">
     <nav class="navbar fixed-top">
-      <a class="navbar-brand name" href="#">Meisterwerkstatt Müller</a>
+      <a class="navbar-brand name" href="#" tabindex="0">Meisterwerkstatt Müller</a>
     </nav>
     <div class="bannercontainer">
       <img class="ecke" src="@/assets/eckenbanner.svg">
       <img class="banner" src="@/assets/engine.jpg">
+      <img class="logo" src="@/assets/logo.svg">
     </div>
     <div class="container blop">
       <div class="row">
@@ -47,7 +48,7 @@
           </p>
         </div>
         <!-- <div class="background">
-          <img class="banner" src="bilder/footer.svg">
+          <img class="banner" src="@/assets/footer.svg">
         </div> -->
         <div class="row">
           <div class="col service camper" style="text-align: center">
@@ -79,37 +80,8 @@
 
 
 <style>
-:root {
-  --main-text-color: #F4981A;
-}
-body {
-  background-color: #2D2D2D;
-  color: var(--main-text-color);
-}
 .main{
   position: relative;
-}
-nav {
-  background-color: #2D2D2D;
-}
-a {
-  color: var(--main-text-color);
-}
-h1 {
-  width: fit-content;
-  text-align: center;
-  padding: 0 3rem;
-  margin-top: -5rem;
-  background-color: #2D2D2D;
-}
-p {
-  text-align: center;
-}
-.name {
-  padding-left: 50px;
-}
-.name:hover {
-  color: #FFC678;
 }
 .bannercontainer{
   display: grid;
@@ -124,10 +96,24 @@ p {
   position: relative;
   object-fit: cover;
 }
+.logo {
+  z-index: 2;
+  place-self: end;
+  margin-right: 4%;
+}
 .ecke {
   width: 100%;
   height: 80vh;
-  z-index: 5;
+  z-index: 1;
+}
+nav {
+  background-color: #2D2D2D;
+}
+.name {
+  padding-left: 50px;
+}
+.name:hover {
+  color: #FFC678;
 }
 .right {
   text-align: right;
@@ -152,16 +138,18 @@ hr {
   color: var(--main-text-color);
   padding: 40px;
   padding-bottom: 25vmax;
-  margin: 1.5rem;
+  margin: 2rem;
 }
 .camper {
   background-color: #585979;
+  margin-left: -1.5rem;
 }
 .car {
   background-color: #517350;
 }
 .e-car {
   background-color: #6D5151;
+  margin-right: -3rem;
 }
 .flexbox {
   display: flex;
@@ -177,10 +165,9 @@ footer {
   margin: 3rem auto;
 }
 /* .background {
-  background-image: url(bilder/footer.svg);
   background-repeat: no-repeat;
   background-position: bottom;
-  position: absolute;
+  position: relative;
   max-height: 0px;
   z-index: -1;
   margin-left: -16%;
