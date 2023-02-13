@@ -1,10 +1,5 @@
 <template>
   <div class="main">
-    <nav class="navbar fixed-top">
-      <a class="navbar-brand name" href="#" tabindex="0"
-        >Meisterwerkstatt Müller</a
-      >
-    </nav>
     <div class="bannercontainer">
       <img class="ecke" src="@/assets/eckenbanner.svg" />
       <img class="banner" src="@/assets/engine.jpg" />
@@ -137,15 +132,6 @@
   height: 80vh;
   z-index: 1;
 }
-nav {
-  background-color: #2d2d2d;
-}
-.name {
-  padding-left: 50px;
-}
-.name:hover {
-  color: #ffc678;
-}
 .right {
   text-align: right;
 }
@@ -189,6 +175,9 @@ hr {
   height: 65px;
   width: 280px;
   margin: auto;
+}
+.kontaktformular:hover {
+  color: #ffc678;
 }
 footer {
   margin-top: 10rem;

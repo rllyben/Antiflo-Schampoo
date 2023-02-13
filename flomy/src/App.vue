@@ -1,7 +1,17 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> <!-- todo cange -->
-    <router-link to="/about">About</router-link>
-  </nav>
+    <nav class="navbar fixed-top">
+      <a class="navbar-brand name" href="#" tabindex="0"
+        >Meisterwerkstatt Müller</a
+      >
+    </nav>
   <router-view/>
 </template>
+
+<style>
+nav {
+  background-color: #2d2d2d;
+}
+.name {
+  padding-left: 50px;
+}
+</style>
