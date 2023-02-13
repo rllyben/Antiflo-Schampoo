@@ -100,9 +100,10 @@
         </div>
       </div>
     </div>
-
     <footer>
-      <div class="container impressum">Impressum</div>
+      <router-link to="/impressum">    
+        <div class="container impressum">Impressum</div>
+      </router-link>
     </footer>
   </div>
 </template>
@@ -190,19 +191,11 @@ hr {
   margin: auto;
 }
 footer {
-  margin: 3rem auto;
+  margin-top: 10rem;
 }
 .background {
-  /* background-image: url("@/assets/footer.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  position: relative;
-  max-height: 0px;
-  z-index: -1;
-  margin-left: -16%; */
   position: relative;
 }
-
 .fragment {
   z-index: -1;
   position: absolute;

@@ -11,6 +11,10 @@ body {
 
 a {
   color: var(--main-text-color);
+  text-decoration: none;
+}
+a:hover {
+  color: #ffc678;
 }
 
 button {
