@@ -1,15 +1,22 @@
 :root {
-    --main-text-color: #F4981A;
-    --main-hover-color: #FFC678;
+  --main-text-color: #F4981A;
+  --main-hover-color: #FFC678;
 }
+
 body {
-    background-color: #2D2D2D;
-    color: var(--main-text-color);
-    overflow-x: hidden;
+  background-color: #2D2D2D;
+  color: var(--main-text-color);
+  overflow-x: hidden;
 }
+
 a {
   color: var(--main-text-color);
 }
+
+button {
+  border: none;
+}
+
 h1 {
   width: fit-content;
   text-align: center;
@@ -17,6 +24,7 @@ h1 {
   margin-top: -5rem;
   background-color: #2D2D2D;
 }
+
 p {
   text-align: center;
 }
@@ -24,6 +32,24 @@ p {
 .navbar {
   --bs-navbar-brand-color: var(--main-text-color);
 }
-.navbar-brand:hover, .navbar-brand:focus {
+
+.navbar-brand:hover,
+.navbar-brand:focus {
   --bs-navbar-brand-hover-color: var(--main-hover-color);
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.custom-row {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 105%;
+  width: 105%;
+  transform: translateX(-2.5%);
 }
