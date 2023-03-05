@@ -18,31 +18,23 @@
             no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
         </div>
-        <div class="row">
+        <div class="row contact-about">
           <div class="col">
-            <p1 class="left">
               Tel. 06128 84322 <br />
               Mail: info@kfz-mwm.de
-            </p1>
           </div>
           <div class="col">
-            <p1>
               Mo: 08:00 - 13:00 Uhr <br />
               Fr: 14:00 - 18:00 Uhr
-            </p1>
           </div>
           <div class="col">
-            <p1>
               Sa: geschlossen <br />
               So: geschlossen
-            </p1>
           </div>
           <div class="col">
-            <p class="right">
               Obere Waldstraße 9 <br />
               65232 Taunusstein <br />
               Deutschland
-            </p>
           </div>
         </div>
       </div>
@@ -81,7 +73,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col flexbox">
           <button type="button" class="kontaktformular">
@@ -89,7 +81,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
     <footer>
       <router-link to="/impressum">    
         <div class="container impressum">Impressum</div>
@@ -152,5 +144,12 @@ footer {
   width: 100vw;
   transform: translateX(-51%);
   margin-left: calc(50%);
+}
+.contact-about {
+  gap: 2rem 0;
+  text-align: center;
+}
+.contact-about > .col {
+  min-width: 194px;
 }
 </style>

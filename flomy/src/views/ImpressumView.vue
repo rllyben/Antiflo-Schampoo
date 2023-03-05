@@ -65,3 +65,11 @@ h4{
   font-weight: 750;
 }
 </style>
+
+<script>
+  export default {
+    mounted () {
+      window.scrollTo(0, 0)
+    }
+  }
+</script>
