@@ -1,10 +1,5 @@
 <template>
   <div class="main">
-    <div class="bannercontainer">
-      <img class="ecke" src="@/assets/eckenbanner.svg" />
-      <img class="banner" src="@/assets/engine.jpg" />
-      <img class="logo" src="@/assets/logo.svg" />
-    </div>
     <div class="container blop">
       <div class="row">
         <div class="halt">
