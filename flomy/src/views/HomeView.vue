@@ -103,45 +103,11 @@
 .main {
   position: relative;
 }
-.bannercontainer {
-  display: grid;
-  grid-template-areas: "overlay";
-}
-.bannercontainer img {
-  grid-area: overlay;
-}
-.banner {
-  width: 100vw;
-  height: 80vh;
-  position: relative;
-  object-fit: cover;
-}
-.logo {
-  z-index: 2;
-  place-self: end;
-  margin-right: 5%;
-  width: 20%;
-}
-.ecke {
-  width: 100%;
-  height: 80vh;
-  z-index: 1;
-}
 .right {
   text-align: right;
 }
 .left {
   text-align: left;
-}
-.blop {
-  margin: 6rem auto;
-  padding: 50px;
-  border: solid 1px var(--main-text-color);
-}
-.halt {
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
 }
 hr {
   margin: 30px;

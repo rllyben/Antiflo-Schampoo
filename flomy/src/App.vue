@@ -19,4 +19,28 @@ nav {
 .name {
   padding-left: 50px;
 }
+.bannercontainer {
+  display: grid;
+  grid-template-areas: "overlay";
+}
+.bannercontainer img {
+  grid-area: overlay;
+}
+.banner {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+  object-fit: cover;
+}
+.logo {
+  z-index: 2;
+  place-self: end;
+  margin-right: 5%;
+  width: 20%;
+}
+.ecke {
+  width: 100%;
+  height: 80vh;
+  z-index: 1;
+}
 </style>

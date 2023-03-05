@@ -1,5 +1,65 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <div class="container blop">
+      <div class="row">
+        <div class="halt">
+          <h1>Impressum</h1>
+        </div>
+        <div class="row">
+          <p>
+            Peter Müller & Sohn OHG <br />
+            Platterstraße 88 <br />
+            65232 Taunusstein <br />
+            <br />
+            <b>Abteilung:</b> <br />
+            Kfz Meister Werkstatt Müller (MWM)<br />
+            Obere Waldstraße 9 <br />
+            65232 Taunusstein 
+          </p>
+          <p>
+            Handelsregister: To do
+          </p>
+          <p>
+            Registergericht: Amtsgericht Darmstadt
+          </p>
+          <p>
+            <b>Geschäftsführer:</b> <br />
+            Hans-Peter Müller <br/>
+            <br/>
+            <b>Vertreten durch:</b> <br />
+            To do
+          </p>
+          <h4>Kontakt</h4>
+          <p>
+            Telefon: +49 (0) 6128 84322 <br />
+            E-Mail: info@kfz-mwm.de
+          </p>
+          <h4>
+            Umsatzsteuer-ID
+          </h4>
+          <p>
+            Umsatzsteuer-ID: To do
+          </p>
+          <!-- <h4>
+            Wirtschaftsidentifikationsnummer
+          </h4>
+          <p>
+            wirtschaftsID
+          </p> -->
+          <!-- <h4>
+            Verbraucherstreitbeilegung/Universalschlichtungsstelle
+          </h4>
+          <p>
+            Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer <br />
+            Verbraucherschlichtungsstelle teilzunehmen.
+          </p> -->
+        </div>
+      </div>
+    </div>
 </template>
+
+<style>
+h4{
+  text-align: center;
+}
+
+</style>
