@@ -10,7 +10,7 @@
             Platterstraße 88 <br />
             65232 Taunusstein <br />
             <br />
-            <b>Abteilung:</b> <br />
+            <span class="bold">Abteilung:</span> <br />
             Kfz Meister Werkstatt Müller (MWM)<br />
             Obere Waldstraße 9 <br />
             65232 Taunusstein 
@@ -22,10 +22,10 @@
             Registergericht: Amtsgericht Darmstadt
           </p>
           <p>
-            <b>Geschäftsführer:</b> <br />
+            <span class="bold">Geschäftsführer:</span> <br />
             Hans-Peter Müller <br/>
             <br/>
-            <b>Vertreten durch:</b> <br />
+            <span class="bold">Vertreten durch:</span> <br />
             To do
           </p>
           <h4>Kontakt</h4>
@@ -61,5 +61,7 @@
 h4{
   text-align: center;
 }
-
+.bold{
+  font-weight: 750;
+}
 </style>
