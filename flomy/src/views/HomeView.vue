@@ -57,9 +57,9 @@
             no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
         </div>
-        <div class="background">
+<!--         <div class="background">
           <img class="fragment" src="@/assets/footer.svg" />
-        </div>
+        </div> -->
         <div class="custom-row">
           <div class="col service camper">
             <h3>Wohnmobile</h3>
@@ -133,18 +133,20 @@ hr {
   color: #ffc678;
 }
 footer {
-  margin-top: 10rem;
+  margin-top: 5
+  rem;
+  margin-bottom: 1rem;
 }
 .background {
   position: relative;
 }
-.fragment {
+/* .fragment {
   z-index: -1;
   position: absolute;
   width: 100vw;
   transform: translateX(-51%);
   margin-left: calc(50%);
-}
+} */
 .contact-about {
   gap: 2rem 0;
   text-align: center;
