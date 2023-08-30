@@ -73,15 +73,17 @@
         </div>
       </div>
     </div>
-    <!-- <div class="container">
+    <div class="container">
       <div class="row">
         <div class="col flexbox">
           <button type="button" class="kontaktformular">
-            <h4>Kontaktformular</h4>
+            <router-link to="/contact">    
+              <div class="container contact">Kontaktformular</div>
+            </router-link>
           </button>
         </div>
       </div>
-    </div> -->
+    </div>
     <footer>
       <router-link to="/impressum">    
         <div class="container impressum">Impressum</div>
