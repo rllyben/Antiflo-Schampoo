@@ -1,7 +1,39 @@
 <template>
   <div class="main">
     <div class="container blop">
+      <div class="halt">
+        <h1>Unser Service</h1>
+      </div>
       <div class="row">
+<!--         <div class="background">
+          <img class="fragment" src="@/assets/footer.svg" />
+        </div> -->
+        <div class="custom-row">
+          <div class="col service camper">
+            <h3>Wohnmobile</h3>
+            <ul>
+              <li>Ersatzteile</li>
+              <li>Einrichtung</li>
+              <li>Camping Zubehör <!-- -> Link auf Movera --></li>
+              <li>Camper & Wohnmobil Ausbau <!-- -> Link Reimo --></li>
+              <li>HU / AU</li>
+              <li>Gasprüfung</li>
+              <li>Inspektion</li>
+              <li>Reparatur</li>
+              <li>Wartung</li>
+            </ul>
+          </div>
+          <div class="col service car">
+            <h3>Kraftfahrzeuge</h3>
+          </div>
+          <div class="col service e-car">
+            <h3>E-Autos</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container blop">
+      <div class="col">
         <div class="halt">
           <h1>About Us</h1>
         </div>
@@ -20,16 +52,12 @@
         </div>
         <div class="row contact-about">
           <div class="col">
-              Tel. 06128 84322 <br />
-              Mail: info@kfz-mwm.de
+              Mail: info@kfz-mwm.de<br />
+              Tel.: 06128 84322
           </div>
           <div class="col">
               Mo: 08:00 - 13:00 Uhr <br />
               Fr: 14:00 - 18:00 Uhr
-          </div>
-          <div class="col">
-              Sa: geschlossen <br />
-              So: geschlossen
           </div>
           <div class="col">
               Obere Waldstraße 9 <br />
@@ -39,51 +67,15 @@
         </div>
       </div>
     </div>
-    <div class="container blop">
-      <div class="halt">
-        <h1>Unser Service</h1>
-      </div>
-      <div class="row">
-        <div class="row halt">
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-        </div>
-<!--         <div class="background">
-          <img class="fragment" src="@/assets/footer.svg" />
-        </div> -->
-        <div class="custom-row">
-          <div class="col service camper">
-            <h3>Wohnmobile</h3>
-          </div>
-          <div class="col service car">
-            <h3>Kraftfahrzeuge</h3>
-          </div>
-          <div class="col service e-car">
-            <h3>E-Autos</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
+<!--     <div class="container">
       <div class="row">
         <div class="col flexbox">
-          <button type="button" class="kontaktformular">
-            <router-link to="/contact">    
-              <div class="container contact">Kontaktformular</div>
-            </router-link>
-          </button>
+          <router-link to="/contact" class="kontaktformular">  
+              <div class="container contact"><h4>Kontaktformular</h4></div>
+          </router-link>
         </div>
       </div>
-    </div>
+    </div> -->
     <footer>
       <router-link to="/impressum">    
         <div class="container impressum">Impressum</div>
@@ -109,8 +101,10 @@ hr {
 .service {
   color: var(--main-text-color);
   padding: 40px;
-  padding-bottom: 25vmax;
   text-align: center;
+}
+.service ul {
+  margin-top: 1rem;
 }
 .camper {
   background-color: #585979;
@@ -130,6 +124,10 @@ hr {
   height: 65px;
   width: 280px;
   margin: auto;
+  border: 1px solid var(--main-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .kontaktformular:hover {
   color: #ffc678;
@@ -152,6 +150,7 @@ footer {
 .contact-about {
   gap: 2rem 0;
   text-align: center;
+  margin: 0 7% !important;
 }
 .contact-about > .col {
   min-width: 194px;

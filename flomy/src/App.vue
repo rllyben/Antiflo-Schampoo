@@ -36,7 +36,7 @@ nav {
   right: 5%;
   z-index: 2;
   position: absolute;
-  width: 25%;
+  width: 23%;
 }
 .ecke {
   bottom: 0;
