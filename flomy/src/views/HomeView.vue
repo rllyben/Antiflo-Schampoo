@@ -25,9 +25,27 @@
           </div>
           <div class="col service car">
             <h3>Kraftfahrzeuge</h3>
+            <ul>
+              <li>Reparaturen</li>
+              <li>Achsvermessung</li>
+              <li>Lichteinstellung</li>
+              <li>Klimaservice</li>
+              <li>HU / AU</li>
+              <li>Fehlersuche</li>
+              <li>Wartungsarbeiten nach Herstellervorgaben</li>
+            </ul>
           </div>
           <div class="col service e-car">
             <h3>E-Autos</h3>
+            <ul>
+              <li>Reparaturen</li>
+              <li>Achsvermessung</li>
+              <li>Lichteinstellung</li>
+              <li>Klimaservice</li>
+              <li>HU</li>
+              <li>Fehlersuche</li>
+              <li>Wartungsarbeiten nach Herstellervorgaben</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -56,8 +74,9 @@
               Tel.: 06128 84322
           </div>
           <div class="col">
-              Mo: 08:00 - 13:00 Uhr <br />
-              Fr: 14:00 - 18:00 Uhr
+              Montag bis Freitag <br />
+              08:00 - 13:00 Uhr <br />
+              14:00 - 18:00 Uhr
           </div>
           <div class="col">
               Obere Waldstraße 9 <br />
