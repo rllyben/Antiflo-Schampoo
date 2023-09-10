@@ -9,21 +9,23 @@
           <img class="fragment" src="@/assets/footer.svg" />
         </div> -->
         <div class="custom-row boxcenter">
-            <div class="col service camper">
-             <h3>Wohnmobile</h3>
-              <ul>
-               <li>Ersatzteile</li>
-                <li>Einrichtung</li>
-                <li><a href=" https://katalog.movera.com/ePaper_MOVERA-Katalog-2023_EUR/#1" target="_blank">Camping Zubehör</a></li>
-                <li><a href="https://www.reimo.com/ausbau-shop/" target="_blank">Camper & Wohnmobil Ausbau</a></li>
-                <li>HU / AU</li>
-                <li>Gasprüfung</li>
-                <li>Inspektion</li>
-                <li>Reparatur</li>
-                <li>Wartung</li>
-              </ul>
+            <div class="col service">
+              <img class="picservice" src="@/assets/Camper.jpg" />
+              <h3>Wohnmobile</h3>
+                <ul>
+                  <li>Ersatzteile</li>
+                  <li>Einrichtung</li>
+                  <li><a href=" https://katalog.movera.com/ePaper_MOVERA-Katalog-2023_EUR/#1" target="_blank">Camping Zubehör</a></li>
+                  <li><a href="https://www.reimo.com/ausbau-shop/" target="_blank">Camper & Wohnmobil Ausbau</a></li>
+                  <li>HU / AU</li>
+                  <li>Gasprüfung</li>
+                  <li>Inspektion</li>
+                  <li>Reparatur</li>
+                  <li>Wartung</li>
+                </ul>
             </div>
-            <div class="col service car">
+            <div class="col service">
+              <img class="picservice" src="@/assets/KFZ.jpg" />
               <h3>Kraftfahrzeuge</h3>
               <ul>
                 <li>Reparaturen</li>
@@ -35,7 +37,8 @@
                 <li>Wartungsarbeiten nach Herstellervorgaben</li>
               </ul>
             </div>
-           <div class="col service e-car">
+           <div class="col service">
+            <img class="picservice" src="@/assets/eCar.jpg" />
             <h3>E-Autos</h3>
             <ul>
               <li>Reparaturen</li>
@@ -47,7 +50,8 @@
               <li>Wartungsarbeiten nach Herstellervorgaben</li>
             </ul>
            </div>
-           <div class="col service e-car">
+           <div class="col service">
+            <img class="picservice" src="@/assets/Reifen.jpg" />
             <h3>Reifen</h3>
             <ul>
               <li>Einlagern</li>
@@ -141,18 +145,25 @@ hr {
   text-align: center;
   min-width: 360px;
   max-width: 720px;
+  position: relative;
+  overflow: hidden;
+  background-color: #282828;
+  border: 1px solid;
 }
 .service ul {
   margin-top: 1rem;
 }
-.camper {
-  background-color: #585979;
+.picservice{
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  transition: 3s; 
 }
-.car {
-  background-color: #517350;
-}
-.e-car {
-  background-color: #6d5151;
+.service:hover .picservice{
+  top: 100%;
 }
 .flexbox {
   display: flex;
