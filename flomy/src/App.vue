@@ -39,7 +39,7 @@ nav {
   width: 23%;
 }
 .ecke {
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   position: absolute;
   z-index: 1;
