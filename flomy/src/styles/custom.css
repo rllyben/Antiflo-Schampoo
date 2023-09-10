@@ -68,7 +68,7 @@ p.tleft {
   justify-content: center;
 }
 
-ul:not('padding') {
+ul:not(.padding) {
   line-height: 1.75;
   padding-left: 0;
   list-style-type: none;

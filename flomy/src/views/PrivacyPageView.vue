@@ -126,7 +126,7 @@
           <p>
             Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
           </p>
-          <ul>
+          <ul class="padding">
               <li>
                 Browsertyp und Browserversion
               </li>
