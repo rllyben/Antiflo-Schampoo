@@ -16,17 +16,15 @@
             65232 Taunusstein 
           </p>
           <p>
-            Handelsregister: To do
+            Handelsregister: HRA 783
           </p>
           <p>
-            Registergericht: Amtsgericht Darmstadt
+            Registergericht: Amtsgericht Wiesbaden
           </p>
           <p>
             <span class="bold">Geschäftsführer:</span> <br />
             Hans-Peter Müller <br/>
             <br/>
-            <span class="bold">Vertreten durch:</span> <br />
-            To do
           </p>
           <h4>Kontakt</h4>
           <p>
@@ -37,21 +35,14 @@
             Umsatzsteuer-ID
           </h4>
           <p>
-            Umsatzsteuer-ID: To do
+            Umsatzsteuer-ID: DE 113900879
           </p>
-          <!-- <h4>
-            Wirtschaftsidentifikationsnummer
-          </h4>
           <p>
-            wirtschaftsID
-          </p> -->
-          <!-- <h4>
-            Verbraucherstreitbeilegung/Universalschlichtungsstelle
-          </h4>
-          <p>
-            Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer <br />
-            Verbraucherschlichtungsstelle teilzunehmen.
-          </p> -->
+            <br />
+            <br />
+            Inhaltlich Verantwortlicher gem §10 Abs. 3 MDStV: <br />
+            Hans-Peter Müller
+          </p>
         </div>
       </div>
     </div>
