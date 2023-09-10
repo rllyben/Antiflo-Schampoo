@@ -41,9 +41,6 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 3rem;
-  max-width: 105%;
-  width: 105%;
-  transform: translateX(-2.5%);
 }
 .blop {
   margin: 6rem auto;

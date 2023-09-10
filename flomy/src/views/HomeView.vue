@@ -8,34 +8,34 @@
 <!--         <div class="background">
           <img class="fragment" src="@/assets/footer.svg" />
         </div> -->
-        <div class="custom-row">
-          <div class="col service camper">
-            <h3>Wohnmobile</h3>
-            <ul>
-              <li>Ersatzteile</li>
-              <li>Einrichtung</li>
-              <li>Camping Zubehör <!-- -> Link auf Movera --></li>
-              <li>Camper & Wohnmobil Ausbau <!-- -> Link Reimo --></li>
-              <li>HU / AU</li>
-              <li>Gasprüfung</li>
-              <li>Inspektion</li>
-              <li>Reparatur</li>
-              <li>Wartung</li>
-            </ul>
-          </div>
-          <div class="col service car">
-            <h3>Kraftfahrzeuge</h3>
-            <ul>
-              <li>Reparaturen</li>
-              <li>Achsvermessung</li>
-              <li>Lichteinstellung</li>
-              <li>Klimaservice</li>
-              <li>HU / AU</li>
-              <li>Fehlersuche</li>
-              <li>Wartungsarbeiten nach Herstellervorgaben</li>
-            </ul>
-          </div>
-          <div class="col service e-car">
+        <div class="custom-row boxcenter">
+            <div class="col service camper">
+             <h3>Wohnmobile</h3>
+              <ul>
+               <li>Ersatzteile</li>
+                <li>Einrichtung</li>
+                <li><a href=" https://katalog.movera.com/ePaper_MOVERA-Katalog-2023_EUR/#1" target="_blank">Camping Zubehör</a></li>
+                <li><a href="https://www.reimo.com/ausbau-shop/" target="_blank">Camper & Wohnmobil Ausbau</a></li>
+                <li>HU / AU</li>
+                <li>Gasprüfung</li>
+                <li>Inspektion</li>
+                <li>Reparatur</li>
+                <li>Wartung</li>
+              </ul>
+            </div>
+            <div class="col service car">
+              <h3>Kraftfahrzeuge</h3>
+              <ul>
+                <li>Reparaturen</li>
+                <li>Achsvermessung</li>
+                <li>Lichteinstellung</li>
+                <li>Klimaservice</li>
+                <li>HU / AU</li>
+                <li>Fehlersuche</li>
+                <li>Wartungsarbeiten nach Herstellervorgaben</li>
+              </ul>
+            </div>
+           <div class="col service e-car">
             <h3>E-Autos</h3>
             <ul>
               <li>Reparaturen</li>
@@ -46,8 +46,20 @@
               <li>Fehlersuche</li>
               <li>Wartungsarbeiten nach Herstellervorgaben</li>
             </ul>
+           </div>
+           <div class="col service e-car">
+            <h3>Reifen</h3>
+            <ul>
+              <li>Einlagern</li>
+              <li>Wechseln</li>
+              <li>Montieren</li>
+              <li>Entsorgen</li>
+              <li>Wuchten</li>
+              <li>Waschen</li>
+              <li>Verkaufen</li>
+            </ul>
+           </div>
           </div>
-        </div>
       </div>
     </div>
     <div class="container blop">
@@ -117,10 +129,15 @@
 hr {
   margin: 30px;
 }
+.boxcenter { 
+  justify-content: center;
+}
 .service {
   color: var(--main-text-color);
   padding: 40px;
   text-align: center;
+  min-width: 360px;
+  max-width: 720px;
 }
 .service ul {
   margin-top: 1rem;
