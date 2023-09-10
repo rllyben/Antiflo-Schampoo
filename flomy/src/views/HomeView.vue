@@ -79,7 +79,7 @@
     <div class="container blop">
       <div class="col">
         <div class="halt">
-          <h1>About Us</h1>
+          <h1>Über uns</h1>
         </div>
         <div class="row halt">
           <p>
