@@ -111,6 +111,9 @@
       <router-link to="/impressum">    
         <div class="container impressum">Impressum</div>
       </router-link>
+      <router-link to="/privacy">    
+        <div class="container privacy">Datenschutz</div>
+      </router-link>
     </footer>
   </div>
 </template>

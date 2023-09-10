@@ -58,3 +58,7 @@ ul {
   list-style-type: none;
   text-align: center;
 }
+footer {
+  margin: 2rem 5rem;
+  display: flex;
+}

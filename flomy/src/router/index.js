@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ImpressumView from '../views/ImpressumView.vue'
 import ContactPageView from '../views/ContactPageView.vue'
+import PrivacyPageView from '../views/PrivacyPageView'
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactPageView
+  },
+  {
+    path: '/privacy',
+    name: 'privacy',
+    component: PrivacyPageView
   }
 ]
 
