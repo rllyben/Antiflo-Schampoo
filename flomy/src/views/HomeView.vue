@@ -19,12 +19,12 @@
                 <a
                   href=" https://katalog.movera.com/ePaper_MOVERA-Katalog-2023_EUR/#1"
                   target="_blank"
-                  >Camping Zubehör</a
+                  ><p5>Camping Zubehör</p5></a
                 >
               </li>
               <li>
                 <a href="https://www.reimo.com/ausbau-shop/" target="_blank"
-                  >Camper & Wohnmobil Ausbau</a
+                  ><p5>Camper & Wohnmobil Ausbau</p5></a
                 >
               </li>
               <li>HU / AU</li>
@@ -167,6 +167,9 @@ hr {
 }
 .service ul {
   margin-top: 1rem;
+}
+p5{
+  text-decoration: underline;
 }
 .picservice {
   top: 0;
