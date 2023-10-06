@@ -30,6 +30,7 @@ nav {
 .banner {
   width: 100%;
   object-fit: cover;
+  margin-top: -5px;
 }
 .logo {
   bottom: 0;
@@ -57,6 +58,11 @@ nav {
 @media (max-width:920px){
   .bannercontainer {
   height: 50vh;
+  }
+}
+@media (max-width:920px) and (max-height:1300px){
+  .bannercontainer {
+  height: 40vh;
   }
 }
 @media (max-width:770px){
@@ -109,4 +115,11 @@ nav {
   height: 15vh;
   }
 }
+
+@media (min-width:580px){
+  .blop {
+  border: solid 1px var(--main-text-color);
+  }
+}
+
 </style>

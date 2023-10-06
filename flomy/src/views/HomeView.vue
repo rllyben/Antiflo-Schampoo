@@ -9,69 +9,77 @@
           <img class="fragment" src="@/assets/footer.svg" />
         </div> -->
         <div class="custom-row boxcenter">
-          <div class="col service">
-            <img class="picservice" src="@/assets/Camper.jpg" />
+          <div class="service-title">
             <h3>Wohnmobile</h3>
-            <ul>
-              <li>Ersatzteile</li>
-              <li>Einrichtung</li>
-              <li>
-                <a
-                  href=" https://katalog.movera.com/ePaper_MOVERA-Katalog-2023_EUR/#1"
-                  target="_blank"
-                  ><p5>Camping Zubehör</p5></a
-                >
-              </li>
-              <li>
-                <a href="https://www.reimo.com/ausbau-shop/" target="_blank"
-                  ><p5>Camper & Wohnmobil Ausbau</p5></a
-                >
-              </li>
-              <li>HU / AU</li>
-              <li>Gasprüfung</li>
-              <li>Inspektion</li>
-              <li>Reparatur</li>
-              <li>Wartung</li>
-            </ul>
+            <div class="service-content">
+              <img class="picservice" src="@/assets/Camper.jpg" />
+              <ul>
+                <li>Ersatzteile</li>
+                <li>Einrichtung</li>
+                <li>
+                  <a
+                    href=" https://katalog.movera.com/ePaper_MOVERA-Katalog-2023_EUR/#1"
+                    target="_blank"
+                    >Camping Zubehör</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.reimo.com/ausbau-shop/" target="_blank"
+                    >Camper & Wohnmobil Ausbau</a
+                  >
+                </li>
+                <li>HU / AU</li>
+                <li>Gasprüfung</li>
+                <li>Inspektion</li>
+                <li>Reparatur</li>
+                <li>Wartung</li>
+              </ul>
+            </div>
           </div>
-          <div class="col service">
-            <img class="picservice" src="@/assets/KFZ.jpg" />
+          <div class="service-title">
             <h3>Kraftfahrzeuge</h3>
-            <ul>
-              <li>Reparaturen</li>
-              <li>Achsvermessung</li>
-              <li>Lichteinstellung</li>
-              <li>Klimaservice</li>
-              <li>HU / AU</li>
-              <li>Fehlersuche</li>
-              <li>Wartungsarbeiten nach Herstellervorgaben</li>
-            </ul>
+            <div class="service-content">
+              <img class="picservice" src="@/assets/KFZ.jpg" />
+              <ul>
+                <li>Reparaturen</li>
+                <li>Achsvermessung</li>
+                <li>Lichteinstellung</li>
+                <li>Klimaservice</li>
+                <li>HU / AU</li>
+                <li>Fehlersuche</li>
+                <li>Wartungsarbeiten nach Herstellervorgaben</li>
+              </ul>
+            </div>
           </div>
-          <div class="col service">
-            <img class="picservice" src="@/assets/eCar.jpg" />
+          <div class="service-title">
             <h3>E-Autos</h3>
-            <ul>
-              <li>Reparaturen</li>
-              <li>Achsvermessung</li>
-              <li>Lichteinstellung</li>
-              <li>Klimaservice</li>
-              <li>HU</li>
-              <li>Fehlersuche</li>
-              <li>Wartungsarbeiten nach Herstellervorgaben</li>
-            </ul>
+            <div class="service-content">
+              <img class="picservice" src="@/assets/eCar.jpg" />
+              <ul>
+                <li>Reparaturen</li>
+                <li>Achsvermessung</li>
+                <li>Lichteinstellung</li>
+                <li>Klimaservice</li>
+                <li>HU</li>
+                <li>Fehlersuche</li>
+                <li>Wartungsarbeiten nach Herstellervorgaben</li>
+              </ul>
+            </div>
           </div>
-          <div class="col service">
-            <img class="picservice" src="@/assets/Reifen.jpg" />
+          <div class="service-title">
             <h3>Reifen</h3>
-            <ul>
-              <li>Einlagern</li>
-              <li>Wechseln</li>
-              <li>Montieren</li>
-              <li>Entsorgen</li>
-              <li>Wuchten</li>
-              <li>Waschen</li>
-              <li>Verkaufen</li>
-            </ul>
+            <div class="service-content">
+              <img class="picservice" src="@/assets/Reifen.jpg" />
+              <ul>
+                <li>Einlagern</li>
+                <li>Wechseln</li>
+                <li>Montieren</li>
+                <li>Entsorgen</li>
+                <li>Wuchten</li>
+                <li>Waschen</li>
+                <li>Verkaufen</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -154,13 +162,18 @@ hr {
 .boxcenter {
   justify-content: center;
 }
-.service {
+.service-title {
+  min-width: 360px;
+  max-width: 720px;
+  text-align: center;
+  flex: 1 0 0%;
+}
+.service-content {
   color: var(--main-text-color);
   padding: 40px;
   text-align: center;
-  min-width: 360px;
-  max-width: 720px;
-  position: relative;
+  min-height: 348px;
+  position: relative; 
   overflow: hidden;
   background-color: #282828;
   border: 1px solid;
@@ -168,7 +181,7 @@ hr {
 .service ul {
   margin-top: 1rem;
 }
-p5{
+li a{
   text-decoration: underline;
 }
 .picservice {
@@ -180,7 +193,7 @@ p5{
   object-fit: cover;
   transition: 3s;
 }
-.service:hover .picservice {
+.service-title:hover .picservice {
   top: 100%;
 }
 .flexbox {

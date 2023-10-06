@@ -59,7 +59,6 @@ p.tleft {
 .blop {
   margin: 6rem auto;
   padding: 50px;
-  border: solid 1px var(--main-text-color);
 }
 
 .halt {
