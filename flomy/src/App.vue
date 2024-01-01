@@ -20,7 +20,6 @@ nav {
   padding-left: 50px;
 }
 .bannercontainer {
-  height: 90vh;
   position: relative;
   overflow: hidden;
 }
@@ -45,81 +44,4 @@ nav {
   position: absolute;
   z-index: 1;
 }
-@media (max-width:1270px){
-  .bannercontainer {
-  height: 75vh;
-  }
-}
-@media (max-width:1100px){
-  .bannercontainer {
-  height: 60vh;
-  }
-}
-@media (max-width:920px){
-  .bannercontainer {
-  height: 50vh;
-  }
-}
-@media (max-width:920px) and (max-height:1300px){
-  .bannercontainer {
-  height: 40vh;
-  }
-}
-@media (max-width:770px){
-  .bannercontainer {
-  height: 45vh;
-  }
-}
-@media (max-width:670px){
-  .bannercontainer {
-  height: 40vh;
-  }
-}
-@media (max-width:600px){
-  .bannercontainer {
-  height: 35vh;
-  }
-}
-@media (max-width:530px){
-  .bannercontainer {
-  height: 30vh;
-  }
-}
-@media (max-width:450px){
-  .bannercontainer {
-  height: 27vh;
-  }
-}
-@media (max-width:370px){
-  .bannercontainer {
-  height: 25vh;
-  }
-}
-@media (max-width:345px){
-  .bannercontainer {
-  height: 23vh;
-  }
-}
-@media (max-width:300px){
-  .bannercontainer {
-  height: 21vh;
-  }
-}
-@media (max-width:280px){
-  .bannercontainer {
-  height: 18vh;
-  }
-}
-@media (max-width:250px){
-  .bannercontainer {
-  height: 15vh;
-  }
-}
-
-@media (min-width:580px){
-  .blop {
-  border: solid 1px var(--main-text-color);
-  }
-}
-
 </style>
