@@ -10,6 +10,7 @@
       <img class="logo" src="@/assets/logo.svg" />
   </div>
   <router-view/>
+
 </template>
 
 <style>
@@ -43,5 +44,11 @@ nav {
   width: 100%;
   position: absolute;
   z-index: 1;
+}
+
+@media (min-width:580px){
+  .blop {
+  border: solid 1px var(--main-text-color);
+  }
 }
 </style>

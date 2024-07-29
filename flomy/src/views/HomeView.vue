@@ -1,4 +1,10 @@
 <template>
+    <div id="app">
+    <Popup :isVisible="showPopup" @close="showPopup = false">
+      <h2>Willkommen!</h2>
+      <p>Dieses Pop-up öffnet sich automatisch, wenn die Seite geladen wird.</p>
+    </Popup>
+  </div>
   <div class="main">
     <div class="container blop">
       <div class="halt">
@@ -145,6 +151,23 @@
   </div>
 </template>
 
+<script>
+import Popup from '../components/PopUp.vue';
+
+export default {
+  components: {
+    Popup
+  },
+  data() {
+    return {
+      showPopup: false
+    };
+  },
+  mounted() {
+    this.showPopup = true;
+  }
+};
+</script>
 
 <style>
 .main {
