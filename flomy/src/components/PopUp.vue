@@ -53,12 +53,11 @@ export default {
   cursor: pointer;
   color: #282828;
   background: var(--main-text-color);
-  border: 1px solid var(--main-text-color);
+  border: 4px solid var(--main-text-color);
 }
 
 .close-btn:hover {
   background: #ffc678;
-  border: 1px solid #ffc678;
+  border: 4px solid #ffc678;
 }
-
 </style>
