@@ -16,6 +16,7 @@
         </div> -->
         <div class="custom-row boxcenter">
           <div class="service-title">
+            <div class="service-title" @click="scrollImageDown"></div>
             <h3>Wohnmobile</h3>
             <div class="service-content">
               <img class="picservice" src="@/assets/Camper.jpg" />
@@ -43,6 +44,7 @@
             </div>
           </div>
           <div class="service-title">
+            <div class="service-title" @click="scrollImageDown"></div>
             <h3>Kraftfahrzeuge</h3>
             <div class="service-content">
               <img class="picservice" src="@/assets/KFZ.jpg" />
@@ -58,6 +60,7 @@
             </div>
           </div>
           <div class="service-title">
+            <div class="service-title" @click="scrollImageDown"></div>
             <h3>E-Autos</h3>
             <div class="service-content">
               <img class="picservice" src="@/assets/eCar.jpg" />
@@ -73,6 +76,7 @@
             </div>
           </div>
           <div class="service-title">
+            <div class="service-title" @click="scrollImageDown"></div>
             <h3>Reifen</h3>
             <div class="service-content">
               <img class="picservice" src="@/assets/Reifen.jpg" />
@@ -165,6 +169,15 @@ export default {
   },
   mounted() {
     this.showPopup = true;
+  },  
+  methods: {
+    scrollImageDown(event) {
+      const image = event.currentTarget.querySelector('.picservice');
+      if (image) {
+        image.style.transition = 'top 3s';
+        image.style.top = '100%';
+      }
+    }
   }
 };
 </script>
