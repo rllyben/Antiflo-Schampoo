@@ -2,7 +2,7 @@
   <div class="popup-overlay" v-if="isVisible">
     <div class="popup">
       <slot></slot>
-      <button class="close-btn" @click="closePopup">Okay</button>
+      <button class="close-btn" @click="closePopup">Hurensohn</button>
     </div>
   </div>
 </template>
@@ -54,6 +54,7 @@ export default {
   color: #282828;
   background: var(--main-text-color);
   border: 4px solid var(--main-text-color);
+  border-radius: 0.4rem;
 }
 
 .close-btn:hover {
