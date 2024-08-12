@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+  <div id="app">
     <Popup :isVisible="showPopup" @close="showPopup = false">
       <h2>Willkommen!</h2>
       <p>Dieses Pop-up öffnet sich automatisch, wenn die Seite geladen wird.</p>
@@ -11,12 +11,8 @@
         <h1>Unser Service</h1>
       </div>
       <div class="row">
-        <!--         <div class="background">
-          <img class="fragment" src="@/assets/footer.svg" />
-        </div> -->
         <div class="custom-row boxcenter">
-          <div class="service-title">
-            <div class="service-title" @click="scrollImageDown"></div>
+          <div class="service-title" @click="toggleImageScroll" :class="{ 'hover-active': !imagesScrolled.has('Wohnmobile') }">
             <h3>Wohnmobile</h3>
             <div class="service-content">
               <img class="picservice" src="@/assets/Camper.jpg" />
@@ -24,16 +20,10 @@
                 <li>Ersatzteile</li>
                 <li>Einrichtung</li>
                 <li>
-                  <a
-                    href=" https://katalog.movera.com/ePaper_MOVERA-Katalog-2023_EUR/#1"
-                    target="_blank"
-                    >Camping Zubehör</a
-                  >
+                  <a href="https://katalog.movera.com/ePaper_MOVERA-Katalog-2023_EUR/#1" target="_blank">Camping Zubehör</a>
                 </li>
                 <li>
-                  <a href="https://www.reimo.com/ausbau-shop/" target="_blank"
-                    >Camper & Wohnmobil Ausbau</a
-                  >
+                  <a href="https://www.reimo.com/ausbau-shop/" target="_blank">Camper & Wohnmobil Ausbau</a>
                 </li>
                 <li>HU / AU</li>
                 <li>Gasprüfung</li>
@@ -43,8 +33,7 @@
               </ul>
             </div>
           </div>
-          <div class="service-title">
-            <div class="service-title" @click="scrollImageDown"></div>
+          <div class="service-title" @click="toggleImageScroll" :class="{ 'hover-active': !imagesScrolled.has('Kraftfahrzeuge') }">
             <h3>Kraftfahrzeuge</h3>
             <div class="service-content">
               <img class="picservice" src="@/assets/KFZ.jpg" />
@@ -59,8 +48,7 @@
               </ul>
             </div>
           </div>
-          <div class="service-title">
-            <div class="service-title" @click="scrollImageDown"></div>
+          <div class="service-title" @click="toggleImageScroll" :class="{ 'hover-active': !imagesScrolled.has('E-Autos') }">
             <h3>E-Autos</h3>
             <div class="service-content">
               <img class="picservice" src="@/assets/eCar.jpg" />
@@ -75,8 +63,7 @@
               </ul>
             </div>
           </div>
-          <div class="service-title">
-            <div class="service-title" @click="scrollImageDown"></div>
+          <div class="service-title" @click="toggleImageScroll" :class="{ 'hover-active': !imagesScrolled.has('Reifen') }">
             <h3>Reifen</h3>
             <div class="service-content">
               <img class="picservice" src="@/assets/Reifen.jpg" />
@@ -101,20 +88,13 @@
         </div>
         <div class="row halt">
           <p>
-            Privat, Persönlich und im direkten Kontakt mit Ihrem KFZ-Meister:
-            Wir unterstützen Sie mit allen Anliegen rund ums Auto! Ob
-            Räderwechsel, Achsvermessung, Klimaservice oder Zahnriemenwechsel;
-            ob Mini, VW oder Audi; ob 3 oder 8,5 Tonnen.
+            Privat, Persönlich und im direkten Kontakt mit Ihrem KFZ-Meister: Wir unterstützen Sie mit allen Anliegen rund ums Auto! Ob Räderwechsel, Achsvermessung, Klimaservice oder Zahnriemenwechsel; ob Mini, VW oder Audi; ob 3 oder 8,5 Tonnen.
             <br />
             <br />
-            Und Ihr Wohnmobil? Wissen Sie schon, wo Sie Ihre Ersatzteile
-            herbekommen? Wir unterstützen Sie gerne mit Rat, Tat, Expertenwissen
-            und Herz, denn wir restaurieren gerade selbst unser privates
-            Wohnmobil.
+            Und Ihr Wohnmobil? Wissen Sie schon, wo Sie Ihre Ersatzteile herbekommen? Wir unterstützen Sie gerne mit Rat, Tat, Expertenwissen und Herz, denn wir restaurieren gerade selbst unser privates Wohnmobil.
             <br />
             <br />
-            Sie finden uns in Taunusstein-Wehen direkt hinter der
-            Star-Tankstelle!
+            Sie finden uns in Taunusstein-Wehen direkt hinter der Star-Tankstelle!
           </p>
         </div>
         <div class="row contact-about">
@@ -135,7 +115,7 @@
         </div>
       </div>
     </div>
-    <!--     <div class="container">
+<!--    <div class="container">
       <div class="row">
         <div class="col flexbox">
           <router-link to="/contact" class="kontaktformular">  
@@ -164,18 +144,25 @@ export default {
   },
   data() {
     return {
-      showPopup: false
+      showPopup: false,
+      imagesScrolled: new Set()
     };
   },
   mounted() {
     this.showPopup = true;
-  },  
+  },
   methods: {
-    scrollImageDown(event) {
+    toggleImageScroll(event) {
       const image = event.currentTarget.querySelector('.picservice');
+      const serviceType = event.currentTarget.querySelector('h3').innerText;
       if (image) {
-        image.style.transition = 'top 3s';
-        image.style.top = '100%';
+        if (this.imagesScrolled.has(serviceType)) {
+          image.style.top = '0';
+          this.imagesScrolled.delete(serviceType);
+        } else {
+          image.style.top = '100%';
+          this.imagesScrolled.add(serviceType);
+        }
       }
     }
   }
@@ -209,7 +196,7 @@ hr {
   padding: 40px;
   text-align: center;
   min-height: 348px;
-  position: relative; 
+  position: relative;
   overflow: hidden;
   background-color: #282828;
   border: 1px solid;
@@ -217,7 +204,7 @@ hr {
 .service ul {
   margin-top: 1rem;
 }
-li a{
+li a {
   text-decoration: underline;
 }
 .picservice {
@@ -227,9 +214,9 @@ li a{
   width: 100%;
   position: absolute;
   object-fit: cover;
-  transition: 3s;
+  transition: top 3s;
 }
-.service-title:hover .picservice {
+.service-title.hover-active:hover .picservice {
   top: 100%;
 }
 .flexbox {

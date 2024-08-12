@@ -2,7 +2,7 @@
   <div class="popup-overlay" v-if="isVisible">
     <div class="popup">
       <slot></slot>
-      <button class="close-btn" @click="closePopup">Hurensohn</button>
+      <button class="close-btn" @click="closePopup">Close</button>
     </div>
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
 <style>
 .popup-overlay {
   position: fixed;
-  z-index: 3;
+  z-index: 9000;
   top: 0;
   left: 0;
   width: 100%;
