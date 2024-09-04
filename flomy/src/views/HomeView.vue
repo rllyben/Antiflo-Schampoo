@@ -157,7 +157,7 @@ export default {
       const serviceType = event.currentTarget.querySelector('h3').innerText;
       if (image) {
         if (this.imagesScrolled.has(serviceType)) {
-          image.style.top = '0';
+          image.style.top = '';
           this.imagesScrolled.delete(serviceType);
         } else {
           image.style.top = '100%';
