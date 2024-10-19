@@ -11,9 +11,9 @@
     </router-link>
   </nav>
   <div class="bannercontainer">
-      <img class="ecke" src="@/assets/eckenbanner.svg" />
-      <img class="banner" src="@/assets/engine.jpg" />
-      <img class="logo" src="@/assets/logo.svg" />
+      <!-- <img class="ecke" src="@/assets/eckenbanner.svg" /> -->
+      <img class="banner" src="@/assets/banner.jpg" />
+      <!-- <img class="logo" src="@/assets/logo.svg" /> -->
   </div>
   <router-view/>
   <footer>
