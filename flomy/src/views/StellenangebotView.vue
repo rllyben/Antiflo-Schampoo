@@ -81,6 +81,11 @@
       </div>
     </div>
   </div>
+  <footer>
+      <router-link to="/privacy">    
+        <div class="container privacy">Datenschutz</div>
+      </router-link>
+    </footer>
 </template>
 
 <style>

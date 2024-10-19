@@ -124,14 +124,6 @@
         </div>
       </div>
     </div> -->
-    <footer>
-      <router-link to="/impressum">
-        <div class="container impressum">Impressum</div>
-      </router-link>
-      <router-link to="/privacy">
-        <div class="container privacy">Datenschutz</div>
-      </router-link>
-    </footer>
   </div>
 </template>
 
@@ -235,10 +227,6 @@ li a {
 }
 .kontaktformular:hover {
   color: #ffc678;
-}
-footer {
-  margin-top: 5 rem;
-  margin-bottom: 1rem;
 }
 .background {
   position: relative;

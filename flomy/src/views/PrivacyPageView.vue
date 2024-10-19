@@ -174,11 +174,6 @@
         </div>
       </div>
     </div>
-    <footer>
-      <router-link to="/impressum">    
-        <div class="container impressum">Impressum</div>
-      </router-link>
-    </footer>
 </template>
 
 <style>

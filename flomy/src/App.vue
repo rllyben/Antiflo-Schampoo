@@ -1,7 +1,10 @@
 <template>
   <nav class="navbar fixed-top">
-    <a class="navbar-brand name" href="#" tabindex="0"
+    <a class="navbar-brand" href="#" tabindex="0"
       >Meisterwerkstatt Müller</a
+    >
+    <a class="navbar-brand sidepage" href="#" tabindex="0"
+      >Jobs</a
     >
   </nav>
   <div class="bannercontainer">
@@ -10,15 +13,19 @@
       <img class="logo" src="@/assets/logo.svg" />
   </div>
   <router-view/>
-
+  <footer>
+      <router-link to="/impressum">
+        <div class="container impressum">Impressum</div>
+      </router-link>
+      <router-link to="/privacy">
+        <div class="container privacy">Datenschutz</div>
+      </router-link>
+    </footer>
 </template>
 
 <style>
 nav {
   background-color: #2d2d2d;
-}
-.name {
-  padding-left: 50px;
 }
 .bannercontainer {
   position: relative;
@@ -50,5 +57,11 @@ nav {
   .blop {
   border: solid 1px var(--main-text-color);
   }
+}
+
+
+footer {
+  margin-top: 5 rem;
+  margin-bottom: 1rem;
 }
 </style>

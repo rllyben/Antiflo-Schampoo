@@ -36,7 +36,17 @@ p.tleft {
 
 .navbar {
   --bs-navbar-brand-color: var(--main-text-color);
+  justify-content: start;
+  align-items: baseline;
+  padding-left: 50px;
+  gap: 20px;
 }
+
+.navbar .sidepage {
+  font-size: calc(var(--bs-navbar-brand-font-size) * 0.75);
+}
+
+.navbar-brand {}
 
 .navbar-brand:hover,
 .navbar-brand:focus {
