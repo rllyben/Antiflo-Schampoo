@@ -2,7 +2,10 @@
   <div class="popup-overlay" v-if="isVisible">
     <div class="popup">
       <slot></slot>
-      <button class="close-btn" @click="closePopup">Close</button>
+      <div class="flex-row popup-btn-group">
+        <button class="secondary" @click="closePopup">Schließen</button>
+        <button class="primary" @click="onActionButtonClick">Interesse?</button>
+      </div>
     </div>
   </div>
 </template>
@@ -18,6 +21,9 @@ export default {
   methods: {
     closePopup() {
       this.$emit('close');
+    },
+    onActionButtonClick() {
+      this.$emit('action');
     }
   },
   name: 'PopUp'
@@ -39,26 +45,26 @@ export default {
 }
 
 .popup {
-  background: #282828;
+  max-width: 80%;
+  background: var(--elevated-background-color);
   padding: 20px;
   border-radius: 5px;
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.close-btn {
+@media (min-width:580px) {
+  .popup {
+    max-width: 600px;
+  }
+}
+
+.popup-btn-group {
+  display: flex;
+  flex-direction: row;
   margin-top: 20px;
-  cursor: pointer;
-  color: #282828;
-  background: var(--main-text-color);
-  border: 4px solid var(--main-text-color);
-  border-radius: 0.4rem;
-}
-
-.close-btn:hover {
-  background: #ffc678;
-  border: 4px solid #ffc678;
+  gap: 10px;
+  justify-content: space-evenly;
 }
 </style>

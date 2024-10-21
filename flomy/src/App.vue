@@ -58,7 +58,7 @@ nav {
 
 @media (min-width:580px){
   .blop {
-  border: solid 1px var(--main-text-color);
+    border: solid 1px var(--main-text-color);
   }
 }
 

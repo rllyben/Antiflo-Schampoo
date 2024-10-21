@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <Popup :isVisible="showPopup" @close="showPopup = false">
-      <h2>Willkommen!</h2>
-      <p>Dieses Pop-up öffnet sich automatisch, wenn die Seite geladen wird.</p>
-    </Popup>
+    <JobPopUp></JobPopUp>
   </div>
   <div class="main">
     <div class="container blop">
@@ -128,20 +125,15 @@
 </template>
 
 <script>
-import Popup from '../components/PopUp.vue';
-
+import JobPopUp from '@/components/JobPopUp.vue';
 export default {
   components: {
-    Popup
+    JobPopUp
   },
   data() {
     return {
-      showPopup: false,
       imagesScrolled: new Set()
     };
-  },
-  mounted() {
-    this.showPopup = true;
   },
   methods: {
     toggleImageScroll(event) {
@@ -190,7 +182,7 @@ hr {
   min-height: 348px;
   position: relative;
   overflow: hidden;
-  background-color: #282828;
+  background-color: var(--elevated-background-color);
   border: 1px solid;
 }
 .service ul {

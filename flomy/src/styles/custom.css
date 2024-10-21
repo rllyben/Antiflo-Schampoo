@@ -1,10 +1,13 @@
 :root {
   --main-text-color: #F4981A;
   --main-hover-color: #FFC678;
+  --main-hover-color-btn: #f17705;
+  --body-background-color: #2D2D2D;
+  --elevated-background-color: #282828;
 }
 
 body {
-  background-color: #2D2D2D;
+  background-color: var(--body-background-color);
   color: var(--main-text-color);
   overflow-x: hidden;
 }
@@ -23,7 +26,7 @@ h1 {
   text-align: center;
   padding: 0 3rem;
   margin-top: -5rem;
-  background-color: #2D2D2D;
+  background-color: var(--body-background-color);
 }
 
 p {
@@ -92,4 +95,34 @@ footer {
 .flex-center {
   display: flex;
   justify-content: center;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 0.4rem;
+  border: 1px solid;
+  padding: 4px 8px;
+}
+
+button.primary {
+  color: var(--elevated-background-color);
+  background: var(--main-text-color);
+  border-color: var(--main-text-color);
+}
+
+button.secondary {
+  color: var(--main-text-color);
+  background: unset;
+  border-color: var(--main-text-color);
+}
+
+button.primary:hover {
+  background: var(--main-hover-color-btn);
+  border-color: var(--main-hover-color-btn);
+}
+
+button.secondary:hover {
+  color: var(--elevated-background-color);
+  background: var(--main-hover-color-btn);
+  border-color: var(--main-hover-color-btn);
 }
