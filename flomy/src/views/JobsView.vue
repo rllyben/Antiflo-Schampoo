@@ -64,13 +64,21 @@
           </li>
         </ul>
 
+        <h3>
+          Bewerbung:
+        </h3>
+        <p>
+          Wir arbeiten direkt und unkompliziert: <b>Rufen Sie uns an</b>,
+           schreiben Sie ein paar Worte per <b>Email</b> an uns - oder <b>kommen</b> Sie einfach direkt <b>vorbei</b>! 
+           Wir freuen uns darauf, Sie kennen zu lernen.
+        </p>
+
         <h3>Kontakt</h3>
         <p>
-          Peter Müller & Sohn OHG <br />
-          Platterstraße 88 <br />
-          65232 Taunusstein <br />
-          <br />
-          <span class="bold">Abteilung:</span> <br />
+          Florian Müller <br />
+          Tel.: <a href="tel:+49612884322">06128-84322</a><br />
+          Mail: <a href="mailto:">TODO</a><br />
+          <br>
           Kfz Meister Werkstatt Müller (MWM)<br />
           Obere Waldstraße 9 <br />
           65232 Taunusstein

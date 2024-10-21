@@ -1,5 +1,5 @@
 <template>
-    <Popup :isVisible="showPopup" @close="showPopup = false">
+    <Popup :isVisible="showPopup" @close="closePopup()" @action="handleActionBtnClick()">
       <h2>Job gesucht?</h2>
       <p>Wir suchen einen <b>Kfz-Mechatroniker (m/w/d)</b></p>
       <p>
@@ -22,6 +22,14 @@ export default {
   },
   mounted() {
     this.showPopup = true;
+  },
+  methods: {
+    closePopup() {
+      this.showPopup = false
+    },
+    handleActionBtnClick() {
+      this.$router.push('/jobs');
+    }
   },
   name: 'JobPopUp'
 };
