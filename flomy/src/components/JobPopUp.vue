@@ -1,5 +1,5 @@
 <template>
-    <Popup :isVisible="showPopup" @close="closePopup()" @action="handleActionBtnClick()">
+    <Popup :isVisible="localShowPopUp" @close="closePopup()" @action="handleActionBtnClick()">
       <h2>Job gesucht?</h2>
       <p>Wir suchen einen <b>Kfz-Mechatroniker (m/w/d)</b></p>
       <p>
@@ -11,21 +11,25 @@
 
 <script>
 import Popup from '../components/PopUp.vue';
+import { jobPopUpStore } from '../state/JobPopupState.js'
+
 export default {
   components: {
     Popup
   },
   data() {
     return {
-      showPopup: false,
+      localShowPopUp: true,
+      jobPopUpStore,
     };
   },
   mounted() {
-    this.showPopup = true;
+    this.localShowPopUp = this.jobPopUpStore.showPopUp;
+    this.jobPopUpStore.showPopUp = false;
   },
   methods: {
     closePopup() {
-      this.showPopup = false
+      this.localShowPopUp = false
     },
     handleActionBtnClick() {
       this.$router.push('/jobs');
