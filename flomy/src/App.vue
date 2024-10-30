@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar fixed-top">
-    <a class="navbar-brand" href="#" tabindex="0"
+  <nav class="navbar sticky-top">
+    <a class="navbar-brand mainpage" href="#" tabindex="0"
       >Meisterwerkstatt Müller</a
     >
     <router-link to="jobs">
