@@ -177,14 +177,6 @@
 </template>
 
 <style>
-h2,
-h4 {
-  text-align: center;
-  margin-top: 25px;
-}
-.bold {
-  font-weight: 750;
-}
 .privacy p {
   text-align: left;
 }

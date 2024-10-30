@@ -83,14 +83,6 @@
   </div>
 </template>
 
-<style>
-h4 {
-  text-align: center;
-}
-.bold {
-  font-weight: 750;
-}
-</style>
 
 <script>
 export default {

@@ -142,3 +142,14 @@ button.secondary:hover {
   background: var(--main-hover-color-btn);
   border-color: var(--main-hover-color-btn);
 }
+
+
+.bold {
+  font-weight: 750;
+}
+
+h2,
+h3,
+h4 {
+  text-align: center;
+}

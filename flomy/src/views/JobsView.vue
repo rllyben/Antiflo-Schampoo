@@ -91,13 +91,6 @@
 </template>
 
 <style>
-h2, h3, h4 {
-  text-align: center;
-}
-.bold {
-  font-weight: 750;
-}
-
 .jobs-container ul {
   list-style-type: circle;
   max-width: fit-content;
