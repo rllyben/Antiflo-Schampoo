@@ -22,3 +22,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+###
+Auf Server hochladen:
+ssh -A -X -p 21872 root@217.92.226.98
+/srv/www/flomy

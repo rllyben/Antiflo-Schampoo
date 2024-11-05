@@ -6,9 +6,9 @@
     <router-link to="jobs">
       <div class="navbar-brand sidepage">Jobs</div>
     </router-link>
-    <router-link to="/agr-verunreinigungen">
+    <!-- <router-link to="/agr-verunreinigungen">
       <div class="navbar-brand sidepage">AGR Verunreinigungen</div>
-    </router-link>
+    </router-link> -->
   </nav>
   <div class="bannercontainer">
       <!-- <img class="ecke" src="@/assets/eckenbanner.svg" /> -->
