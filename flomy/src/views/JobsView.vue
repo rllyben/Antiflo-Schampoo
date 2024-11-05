@@ -77,7 +77,7 @@
         <p>
           Florian Müller <br />
           Tel.: <a href="tel:+49612884322">06128-84322</a><br />
-          Mail: <a href="mailto:">TODO</a><br />
+          Mail: <a href="mailto:info@kfz-mwm.de">info@kfz-mwm.de</a><br />
           <br>
           Kfz Meister Werkstatt Müller (MWM)<br />
           Obere Waldstraße 9 <br />
