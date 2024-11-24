@@ -101,7 +101,7 @@
           </div>
           <div class="col">
             Montag bis Freitag <br />
-            08:00 - 13:00 Uhr <br />
+            09:00 - 13:00 Uhr <br />
             14:00 - 18:00 Uhr
           </div>
           <div class="col">
