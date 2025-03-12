@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+ <!-- <div id="app">
     <JobPopUp></JobPopUp>
-  </div>
+  </div>  -->
   <div class="main">
     <div class="container blop">
       <div class="halt">
@@ -112,6 +112,7 @@
         </div>
       </div>
     </div>
+  </div>
 <!--    <div class="container">
       <div class="row">
         <div class="col flexbox">
@@ -121,15 +122,14 @@
         </div>
       </div>
     </div> -->
-  </div>
 </template>
 
 <script>
-import JobPopUp from '@/components/JobPopUp.vue';
+/* import JobPopUp from '@/components/JobPopUp.vue'; */
 export default {
-  components: {
+  /* components: {
     JobPopUp
-  },
+  }, */
   data() {
     return {
       imagesScrolled: new Set()
